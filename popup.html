@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width:357px;
+        overflow-x:hidden;
+      }
+
+      img {
+        margin:5px;
+        border:2px solid black;
+        vertical-align:middle;
+        width:75px;
+        height:75px;
+      }
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="nacl.js"></script>
+  </head>
+  <body>
+    <h1>Native Client Module HelloTutorial</h1>
+
+    <p>
+      <div id="listener">
+        <script type="text/javascript" src="nacl2.js"></script>
+
+        <embed name="nacl_module"
+          id="openssl_exp_extension"
+          width=0 height=0
+          src="openssl_exp_extension.nmf"
+          type="application/x-nacl" />
+      </div>
+    </p>
+    <h2>Status</h2>
+    <div id="status_field">NO-STATUS</div>
+    <h2>Message</h2>
+    <pre><div id="message_field"></div></pre>
+  </body>
+</html>

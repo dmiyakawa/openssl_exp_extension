@@ -1,0 +1,10 @@
+{
+  "name": "OpenSSL Exp Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Demonstrate misc OpenSSL feature on Chrome extension",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
